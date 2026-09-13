@@ -1,0 +1,1019 @@
+
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b0000, #e53935);
+            color: white;
+            padding: 30px 8%;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 10px #ddd;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #b71c1c;
+            font-weight: bold;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #e53935;
+        }
+
+        .hero {
+            padding: 65px 8%;
+            text-align: center;
+            background: white;
+        }
+
+        .hero h2 {
+            font-size: 34px;
+            color: #b71c1c;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            max-width: 750px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+        .hero-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-bottom: 18px;
+    background: #fff0f0;
+    color: #b71c1c;
+    border: 1px solid #ffcdd2;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.hero-buttons .emergency-btn,
+.hero-secondary-btn {
+    margin-top: 0;
+}
+
+.hero-secondary-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: #b71c1c;
+    border: 2px solid #d32f2f;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.hero-secondary-btn:hover {
+    background: #d32f2f;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.hero-features div {
+    padding: 18px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+}
+
+.hero-features span {
+    display: block;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.hero-features strong {
+    color: #333;
+    font-size: 14px;
+}
+
+        .emergency-btn,
+        .location-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 15px 30px;
+            background: #d32f2f;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 30px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .emergency-btn:hover,
+        .location-btn:hover {
+            background: #a50000;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 50px 8%;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #b71c1c;
+            font-size: 28px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 18px #ddd;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 8px 25px #ccc;
+        }
+
+        .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .help-section {
+            background: #fff3f3;
+        }
+
+        .help-box,
+        .location-box,
+        .objective-box {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 18px;
+            box-shadow: 0 5px 20px #ddd;
+            text-align: center;
+        }
+
+        .help-box h3,
+        .location-box h3 {
+            color: #b71c1c;
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+
+        .help-box p,
+        .location-box p,
+        .objective-box p {
+            color: #666;
+            line-height: 1.6;
+        }
+/* Emergency Do's & Don'ts */
+
+.dos-donts {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.dos-donts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 950px;
+    margin: auto;
+}
+
+.dos-box,
+.dont-box {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 5px 18px #ddd;
+}
+
+.dos-box {
+    border-top: 5px solid #2e7d32;
+}
+
+.dont-box {
+    border-top: 5px solid #d32f2f;
+}
+
+.dos-box h3 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.dont-box h3 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+
+.dos-box li,
+.dont-box li {
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .dos-donts-grid {
+        grid-template-columns: 1fr;
+    }
+}
+        /* Location Result */
+        #locationResult {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f5f7fb;
+            border-radius: 10px;
+            display: none;
+            line-height: 1.8;
+        }
+
+        #mapLink {
+            display: inline-block;
+            margin-top: 10px;
+            color: #b71c1c;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        /* Emergency Guide */
+
+.guide-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #ddd;
+    text-align: center;
+}
+
+.guide-select {
+    width: 80%;
+    max-width: 500px;
+    padding: 14px;
+    margin: 20px 0;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.guide-result {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff3f3;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.guide-result h3 {
+    color: #b71c1c;
+    margin-bottom: 12px;
+}
+
+.guide-result p {
+    line-height: 1.7;
+    color: #555;
+}
+
+        .contact-card {
+            text-align: center;
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .number {
+            font-size: 30px;
+            font-weight: bold;
+            color: #d32f2f;
+            margin: 12px 0;
+        }
+
+        .call-btn {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 22px;
+            background: #d32f2f;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        .tips {
+            background: #f5f7fb;
+        }
+
+        ul {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 30px 45px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px #ddd;
+        }
+
+        li {
+            margin: 15px 0;
+            line-height: 1.5;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 20px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav a {
+                margin: 0 5px;
+                font-size: 13px;
+            }
+
+            .hero h2 {
+                font-size: 26px;
+            }
+
+            section {
+                padding: 40px 5%;
+            }
+
+            ul {
+                padding: 25px 35px;
+            }
+        }
+        /* Dark Mode */
+
+.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+.dark-mode .card,
+.dark-mode .location-box,
+.dark-mode .guide-box,
+.dark-mode .quiz-box,
+.dark-mode .results-box {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode p {
+    color: #ddd;
+}
+
+.dark-mode .quiz-question {
+    background: #2a2a2a;
+}
+
+.dark-mode .guide-result {
+    background: #2a2a2a;
+}
+
+.dark-mode .results-text {
+    color: #ddd;
+}
+
+.dark-mode .progress {
+    background: #444;
+}
+.dark-btn {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    padding: 10px 16px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.dark-mode section {
+    background: #121212;
+}
+
+.dark-mode h2,
+.dark-mode h3 {
+    color: #f5f5f5;
+}
+
+.dark-mode .card p,
+.dark-mode .location-box p,
+.dark-mode .guide-box p {
+    color: #ddd;
+}
+
+.dark-mode nav {
+    background: #1b1b1b;
+}
+
+.dark-mode nav a {
+    color: #fff;
+}
+.dark-mode .hero,
+.dark-mode .help-box,
+.dark-mode .tips-box,
+.dark-mode .objective-box,
+.dark-mode .feature-box {
+    background: #1e1e1e;
+    color: #f5f5f5;
+}
+
+.dark-mode .hero p,
+.dark-mode .help-box p,
+.dark-mode .tips-box p,
+.dark-mode .objective-box p,
+.dark-mode .feature-box p {
+    color: #ddd;
+}/* Remaining boxes - Dark Mode */
+
+.dark-mode .contact-box,
+.dark-mode .emergency-contact,
+.dark-mode .contact-card,
+.dark-mode .safety-box,
+.dark-mode .safety-tips,
+.dark-mode .tips {
+    background: #1e1e1e !important;
+    color: #f5f5f5 !important;
+}
+
+.dark-mode .contact-box *,
+.dark-mode .emergency-contact *,
+.dark-mode .contact-card *,
+.dark-mode .safety-box *,
+.dark-mode .safety-tips *,
+.dark-mode .tips * {
+    color: #f5f5f5 !important;
+}
+.dark-mode .tips ul,
+.dark-mode .tips ol,
+.dark-mode .safety-tips ul,
+.dark-mode .safety-tips ol {
+    background: #1e1e1e !important;
+    color: #f5f5f5 !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .tips li,
+.dark-mode .safety-tips li {
+    color: #f5f5f5 !important;
+}
+/* Thank You Section */
+
+#thankyou {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.thankyou-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 45px 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.thankyou-box h1 {
+    color: #d32f2f;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.thankyou-box h2 {
+    margin-bottom: 20px;
+}
+
+.thankyou-box p {
+    line-height: 1.7;
+    color: #555;
+    margin: 12px 0;
+}
+
+/* Dark Mode */
+
+.dark-mode .thankyou-box {
+    background: #1e1e1e !important;
+    color: #f5f5f5;
+}
+
+.dark-mode .thankyou-box p,
+.dark-mode .thankyou-box h2 {
+    color: #f5f5f5;
+}
+/* Professional Emergency Contact Cards */
+
+.contact-card {
+    position: relative;
+    overflow: hidden;
+    border-top: 5px solid #d32f2f;
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #ccc;
+}
+
+.contact-card h3 {
+    color: #333;
+    font-size: 19px;
+}
+
+.contact-card p {
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.number {
+    font-size: 34px;
+    letter-spacing: 1px;
+}
+
+.call-btn {
+    transition: 0.3s ease;
+}
+
+.call-btn:hover {
+    background: #a50000;
+    transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark-mode .contact-card h3,
+.dark-mode .contact-card p {
+    color: #f5f5f5 !important;
+}
+/* Awareness Quiz */
+
+.quiz-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #fff5f5;
+    border-radius: 12px;
+}
+
+.quiz-question h3 {
+    color: #b71c1c;
+    margin-bottom: 15px;
+}
+
+.quiz-option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.quiz-btn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-btn:hover {
+    background: #a50000;
+    transform: scale(1.03);
+}
+
+.quiz-result {
+    display: none;
+    margin-top: 20px;
+    padding: 18px;
+    text-align: center;
+    background: #f1f8e9;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Survey & Results */
+
+.results-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.result-item {
+    margin: 22px 0;
+}
+
+.result-label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.progress {
+    width: 100%;
+    height: 14px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #d32f2f;
+    border-radius: 10px;
+}
+
+.results-text {
+    margin-top: 25px;
+    line-height: 1.7;
+    color: #555;
+}
+/* Mobile Responsive Design */
+
+@media (max-width: 768px) {
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px 10px;
+    }
+
+    section {
+        padding: 40px 15px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .card,
+    .contact-card,
+    .location-box,
+    .guide-box,
+    .quiz-box,
+    .results-box,
+    .thankyou-box {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 22px;
+    }
+
+    .guide-select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .number {
+        font-size: 30px;
+    }
+
+    .dark-btn {
+        top: auto;
+        bottom: 20px;
+        right: 15px;
+    }
+
+    .thankyou-box h1 {
+        font-size: 34px;
+    }
+
+    .thankyou-box h2 {
+        font-size: 20px;
+    }
+}
+.quiz-box {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #ddd;
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #fff5f5;
+    border-radius: 12px;
+}
+
+.quiz-question h3 {
+    color: #b71c1c;
+    margin-bottom: 15px;
+}
+
+.quiz-option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.quiz-btn {
+    display: block;
+    margin: 25px auto 0;
+    padding: 12px 25px;
+    background: #d32f2f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.quiz-btn:hover {
+    background: #a50000;
+    transform: scale(1.03);
+}
+
+.quiz-result {
+    display: none;
+    margin-top: 20px;
+    padding: 18px;
+    text-align: center;
+    background: #f1f8e9;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* Dark mode improvement */
+body.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card,
+body.dark-mode .quiz-box,
+body.dark-mode .quiz-question {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .card p,
+body.dark-mode .card li,
+body.dark-mode .quiz-question h3,
+body.dark-mode label {
+    color: #ffffff;
+}
+
+body.dark-mode nav a {
+    color: #ffffff;
+}
+/* Fix dark mode for Before, During & After cards */
+
+body.dark-mode .dos-donts {
+    background-color: #121212 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .dos-donts .card {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+body.dark-mode .dos-donts .card h3,
+body.dark-mode .dos-donts .card p,
+body.dark-mode .dos-donts .card li {
+    color: #ffffff !important;
+}
+body.dark-mode .cards .card {
+    background: #242424 !important;
+    color: white !important;
+    border: 1px solid #555 !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .cards .card h3,
+body.dark-mode .cards .card p,
+body.dark-mode .cards .card li {
+    color: white !important;
+}
+body.dark-mode section.dos-donts .cards > div.card {
+    background-color: #242424 !important;
+    background: #242424 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode section.dos-donts .cards > div.card * {
+    color: #ffffff !important;
+}
+/* DARK MODE CARD FIX */
+
+body.dark-mode .card {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .card p,
+body.dark-mode .card li {
+    color: #ffffff !important;
+}
+/* Dark Mode for All Pages */
+
+body.dark-mode {
+    background: #121212;
+    color: #f5f5f5;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #1b1b1b;
+    color: #ffffff;
+}
+
+body.dark-mode .card,
+body.dark-mode .quiz-box,
+body.dark-mode .quiz-question,
+body.dark-mode .checklist-box {
+    background: #242424;
+    color: #f5f5f5;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .title,
+body.dark-mode p,
+body.dark-mode li,
+body.dark-mode label {
+    color: #f5f5f5;
+}
+
+body.dark-mode a {
+    color: #90caf9;
+}
+
+body.dark-mode .dos-donts {
+    background: #181818;
+}
+
+body.dark-mode input,
+body.dark-mode select,
+body.dark-mode textarea {
+    background: #333333;
+    color: white;
+    border: 1px solid #777777;
+}
+/* Dark Mode Card Fix */
+
+body.dark-mode .card {
+    background: #1e1e2f;
+    color: white;
+}
+
+body.dark-mode .card h3 {
+    color: white;
+}
+
+body.dark-mode .card p,
+body.dark-mode .card li {
+    color: #dddddd;
+}
+
+body.dark-mode .awareness,
+body.dark-mode .dos-donts {
+    color: white;
+}
+
+body.dark-mode .title {
+    color: white;
+}
+/* Final Dark Mode Fix for Safety Tips */
+
+body.dark-mode .dos-donts .card {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .dos-donts .card ul {
+    background-color: #1e1e1e !important;
+    color: #ffffff !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .dos-donts .card h3,
+body.dark-mode .dos-donts .card li {
+    color: #ffffff !important;
+}

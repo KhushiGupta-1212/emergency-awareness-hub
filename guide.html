@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Guide | Emergency Awareness Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <h1>🚨 Emergency Awareness Hub</h1>
+<button onclick="toggleDarkMode()" class="dark-mode-btn">
+    🌙 Dark Mode
+</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="guide.html">Emergency Guide</a>
+            <a href="location.html">Location & Help</a>
+            <a href="contacts.html">Emergency Contacts</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="quiz.html">Quiz & Survey</a>
+            <a href="about.html">About Project</a>
+        </nav>
+    </header>
+
+
+    <!-- EMERGENCY GUIDE -->
+
+    <section class="awareness">
+
+        <h2 class="title">📖 Emergency Guide</h2>
+
+        <p>
+            Select an emergency situation to view basic safety guidance.
+        </p>
+
+        <div class="guide-selector">
+
+            <select id="emergencySelect" onchange="showGuide()">
+
+                <option value="">-- Select Emergency Situation --</option>
+
+                <option value="fire">🔥 Fire Emergency</option>
+
+                <option value="medical">🚑 Medical Emergency</option>
+
+                <option value="flood">🌊 Flood</option>
+
+                <option value="earthquake">🌍 Earthquake</option>
+
+                <option value="electrical">⚡ Electrical Emergency</option>
+
+            </select>
+
+        </div>
+
+
+        <!-- GUIDE RESULT -->
+
+        <div id="guideResult" class="guide-result">
+
+            <h3 id="guideTitle"></h3>
+
+            <p id="guideText"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUICK EMERGENCY STEPS -->
+
+    <section class="dos-donts">
+
+        <h2 class="title">🛡️ Quick Emergency Steps</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>1️⃣ Stay Calm</h3>
+                <p>
+                    Stay calm and quickly understand what is happening
+                    before taking action.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>2️⃣ Move to Safety</h3>
+                <p>
+                    Move away from immediate danger and go to a safer
+                    location when possible.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>3️⃣ Call for Help</h3>
+                <p>
+                    Contact the appropriate emergency service and clearly
+                    explain the situation and your location.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>4️⃣ Follow Instructions</h3>
+                <p>
+                    Follow instructions given by emergency responders
+                    and official authorities.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MOBILE TECHNOLOGY DURING EMERGENCY -->
+
+    <section class="awareness">
+
+        <h2 class="title">📱 How Mobile Technology Helps</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📞 Emergency Calls</h3>
+                <p>
+                    A mobile phone can help you contact emergency services
+                    when immediate assistance is required.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📍 GPS Location</h3>
+                <p>
+                    GPS can help identify your location and make it easier
+                    to communicate where help is needed.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>📢 Emergency Alerts</h3>
+                <p>
+                    Mobile alerts can provide important warnings and
+                    instructions during emergencies.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Emergency Awareness Hub |
+            Emergency Response Awareness Using Mobile Technology
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

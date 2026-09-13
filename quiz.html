@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quiz & Survey | Emergency Awareness Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚨 Emergency Awareness Hub</h1>
+<button onclick="toggleDarkMode()" class="dark-mode-btn">
+    🌙 Dark Mode
+</button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="guide.html">Emergency Guide</a>
+            <a href="location.html">Location & Help</a>
+            <a href="contact.html">Emergency Contacts</a>
+            <a href="tips.html">Safety Tips</a>
+            <a href="quiz.html">Quiz & Survey</a>
+            <a href="about.html">About Project</a>
+        </nav>
+    </header>
+
+
+    <section class="awareness">
+
+        <h2 class="title">🧠 Emergency Awareness Quiz</h2>
+
+        <p>
+            Test your basic knowledge about emergency response and
+            mobile safety.
+        </p>
+
+        <div class="quiz-box">
+
+            <div class="quiz-question">
+                <h3>1. Which number is used for emergency response in India?</h3>
+
+                <label>
+                    <input type="radio" name="q1" value="112">
+                    112
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="101">
+                    101
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="108">
+                    108
+                </label>
+
+                <label>
+                    <input type="radio" name="q1" value="100">
+                    100
+                </label>
+            </div>
+
+
+            <div class="quiz-question">
+
+                <h3>2. What should you do first during an emergency?</h3>
+
+                <label>
+                    <input type="radio" name="q2" value="panic">
+                    Panic
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="safe">
+                    Stay calm and assess the situation
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="ignore">
+                    Ignore the situation
+                </label>
+
+                <label>
+                    <input type="radio" name="q2" value="run">
+                    Take unnecessary risks
+                </label>
+
+            </div>
+
+
+            <div class="quiz-question">
+
+                <h3>3. Which mobile feature can help identify your location?</h3>
+
+                <label>
+                    <input type="radio" name="q3" value="water">
+                    Calculator
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="camera">
+                    Camera
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="gps">
+                    GPS / Location Services
+                </label>
+
+                <label>
+                    <input type="radio" name="q3" value="music">
+                    Music Player
+                </label>
+
+            </div>
+
+
+            <button onclick="checkQuiz()" class="emergency-btn">
+                🎯 Submit Quiz
+            </button>
+
+            <div id="quizResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="dos-donts">
+
+        <h2 class="title">📊 Survey Results</h2>
+
+        <p>
+            The survey helped understand people's awareness of mobile
+            technology and emergency response.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>📞 Emergency Contacts</h3>
+                <p>82% participants were aware of emergency contacts.</p>
+            </div>
+
+            <div class="card">
+                <h3>📍 Location Sharing</h3>
+                <p>68% participants understood the importance of location sharing.</p>
+            </div>
+
+            <div class="card">
+                <h3>📢 Emergency Alerts</h3>
+                <p>74% participants were aware of emergency alerts.</p>
+            </div>
+
+            <div class="card">
+                <h3>🩹 First-Aid Information</h3>
+                <p>56% participants were aware of mobile-based first-aid information.</p>
+            </div>
+
+        </div>
+
+        <p>
+            <strong>Note:</strong> These percentages are sample survey values.
+            Replace them with your actual survey results if required.
+        </p>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Emergency Awareness Hub |
+            Emergency Response Awareness Using Mobile Technology
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
